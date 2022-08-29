@@ -1,38 +1,408 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&family=Concert+One&family=Dancing+Script&family=Lobster&family=Oleo+Script+Swash+Caps&family=Satisfy&display=swap');
+.header{
+  position: relative;
+  width: 100%;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(339deg, rgba(253,170,96,1) 0%, rgba(255,242,174,1) 38%, rgba(255,242,174,1) 66%, rgba(253,170,96,1) 100%);
+}
+.header img{
+  position: absolute;
+  margin-left: 40px;
+  height: 130%;
+}
+.header .navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19%;
+}
+.header .navbar a{
+  padding: 70px;
+  text-decoration: none;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s linear;
+  color: rgb(237, 69, 8);
+}
+.header .navbar a:hover{
+  color: rgb(109, 106, 106);
+}
+.header .navbar h3{
+  font-size: 2.3rem;
+  padding: 0 20px 0 20px;
+  font-family: "Lobster";
+  color:maroon;
+}
+.header .dropdown .btn{
+  margin-right: 40px;
+  background-color: rgb(249, 66, 0);
+  box-shadow: 0 4px 4px 0 rgb(146, 63, 5);
+  border: transparent;
+}
+.header .dropdown .dropdown-menu{
+  background-color: rgb(255, 221, 183);
+  padding: 10px;
+}
+.header .dropdown .dropdown-menu li a{
+  color: rgb(136, 7, 7);
+  font-family:cursive;
+}
+.header .dropdown .dropdown-menu li a:hover{
+  background-color: rgb(138, 10, 10);
+  color: wheat;
+}
+.carousel-inner marquee{
+  background: linear-gradient(to top, rgba(253,170,96,1) 0%, rgba(255,242,174,1) 38%, rgba(255,242,174,1) 66%, rgba(253,170,96,1) 100%);
+  color:rgb(155, 48, 9);
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Anek Gujarati";
+}
+
+.carousel-item{
+  margin-top: 28px;
+  height: 60vh;
+  min-height: 200px;
+  background: no-repeat scroll center scroll;
+  --webkit-background-size: cover;
+  background-size: cover;
+}
+.carousel-item::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.carousel-caption{
+  bottom: 180px;
+}
+.carousel-caption .buri{
+  font-size: 30px;
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 42%;
+  border: 1px solid rgb(244, 54, 54);
+  background-color: rgb(255, 115, 22);
+  border-radius: 20px;
+  margin-left: 30%;
+  color: white;
+  padding: 5px 0 5px 0;
+}
+
+.carousel-caption  .bet{
+  border: 1px solid #febb1c;
+  background-color: rgb(255, 234, 0);
+  color: rgb(166, 8, 103);
+  width: 35%;
+  margin-left: 34%;
+}
+
+.carousel-caption .bete{
+  border: 1px solid rgb(238, 14, 14);
+  background-color: rgb(246, 70, 73);
+  color: rgb(0, 255, 234);
+  width: 30%;
+  margin-left: 36%;
+}
+.carousel-caption p{
+  font-size: 33px;
+  font-family: "Dancing Script";
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: 700;
+}
+.carousel-caption a{
+  background-color: black;
+  text-decoration: none;
+  color: rgb(244, 204, 132);
+  font-size: 26px;
+  font-family: "Lobster";
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: 0 5px 5px 0 rgb(85, 84, 84);
+  transition: 0.3s linear;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.carousel-caption a:hover{
+  font-size: 30px;
+  color: white;
+}
+.banner{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, wheat 40%, rgb(72, 242, 72));
+}
+.banner .ig{
+  width: 40%;
+height: 35vh;
+border: 1px solid green;
+box-shadow: 7px 0px 9px 0px green;
+}
+.banner img{
+width: 40%;
+height: 35vh;
+border: 1px solid green;
+box-shadow: -8px 0px 10px 0px green;
+}
+.banner .con{
+  margin-left: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+.banner .con h5{
+  font-size: 40px;
+  color: rgb(6, 131, 6);
+  font-family: "Satisfy";
+  font-weight: bold;
+}
+.banner .con p{
+  font-size: 20px;
+  color: rgb(235, 91, 19);
+  font-family: "Anek Gujarati";
+  font-weight: 600;
+}
+.banner .con a{
+  text-decoration: none;
+  font-size: 30px;
+  background-color: rgb(36, 176, 4);
+  color: white;
+  padding: 0 10px 0 10px;
+  border: rgb(5, 109, 5);
+  border-radius: 10px;
+  font-family: "Dancing Script";
+  box-shadow: 0 5px 5px 0 rgb(3, 117, 28);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.banner .con a:hover{
+font-size: 34px;
+}
+.caro{
+  display: flex;
+}
+.card{
+  margin: 0.5em;
+  width: calc(100%/3);
+}
+
+
+.popular_song {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  margin: auto;
+}
+
+
+.popular_song .pop_song {
+  width: 100%;
+  height: 350px;
+  margin-top: 15px;
+  display: flex;
+  overflow-x: auto;
+  gap: 20rem;
+  scroll-behavior: smooth;
+}
+.popular_song h4{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 40px;
+  font-size: 40px;
+  font-family: "Anek Gujarati";
+font-weight: 700;
+color: rgb(116, 6, 6);
+ }
+
+ .popular_song .pop_song::-webkit-scrollbar{
+  display: none;
+  overflow-y: hidden;
+}
+.popular_song .pop_song li{
+  min-width: 100px;
+  height: 140px;
+  list-style-type: none;
+  margin-right: 10px;
+  transition: .3s linear;
+}
+.popular_song .pop_song li .img_play{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ display: flex;
+ margin-left: 60%;
+ align-items: center;
+ border: 2px solid black;
+ border-radius: 52%;
+ box-shadow: 5px 5px 5px 5px rgb(91, 90, 90);
+ justify-content: center;
+ cursor: pointer;
+transition: 0.3s linear;
+}
+
+.popular_song .pop_song li .img_play img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+
+}
+.popular_song .pop_song li .img_play:hover{
+  box-shadow: none;
+}
+.popular_song .pop_song li h5{
+padding: 5px 0px 0px 5px;
+line-height: 15px;
+width: 250px;
+font-size: 23px;
+text-align: center;
+margin-left: 50%;
+padding-top: 15px;
+font-family: "Lobster";
+}
+.popular_song .pop_song li h5 .subtitle{
+font-size: 14px;
+padding: 8px;
+color: #4c5262;
+}
+h5 .star i{
+  color: rgb(255, 98, 0);
+}
+.popular_song a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(135, 8, 8);
+  font-family: "Lobster";
+  border: 2px solid transparent;
+  background:linear-gradient(to bottom, wheat 30%, rgb(255, 65, 1));
+  border-radius: 10px;
+  margin-top: 5%;
+  padding-left: 10px ;
+  padding-right: 10px;
+  margin-left: 45%;
+  box-shadow: 2px 3px 3px rgb(206, 72, 5);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.popular_song a:hover{
+  font-size: 1.6rem;
+color: rgb(106, 104, 104);
+}
+.image-con .imge img{
+width: 100%;
+height: 120vh;
+}
+.image-con h1{
+  font-family: "Oleo Script Swash Caps";
+  margin-left: 38%;
+  margin-top: 30px;
+  color: green;
+}
+.image-con .bor{
+  background-color: maroon;
+  padding: 15px;
+}
+.image-con a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(135, 8, 8);
+  font-family: "Lobster";
+  border: 2px solid transparent;
+  background:linear-gradient(to bottom, wheat 30%, rgb(255, 65, 1));
+  border-radius: 10px;
+  margin-top: 5%;
+  padding-left: 10px ;
+  padding-right: 10px;
+  margin-left: 45%;
+  box-shadow: 2px 3px 3px rgb(206, 72, 5);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.image-con a:hover{
+  background: white;
+  color: maroon;
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+footer h4{
+  font-size: 24px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Oleo Script Swash Caps";
+}
+footer p{
+  font-size:15px ;
+  margin: 0 0 8px 0;
+  font-family: "Lobster";
+  color: rgb(243, 238, 238);
+}
+footer a{
+  font-size:15px ;
+  text-decoration: none;
+  color: #cdcbcb;
+  margin-bottom: 10px;
+  font-family: "Anek Gujarati";
+}
+footer .follow{
+  margin-top: 20px;  
+}
+footer .follow i{ 
+  color: #08e5d6;
+  padding-right:8px ;
+  font-size: 27px;
+  cursor: pointer;
+}
+footer .install .row img{
+  border-radius: 6px;
+
+  height: 3rem;
+  width: 140px;
+}
+footer .install img{
+  margin: 10px 0 15px 0;
+  width: 300px;
+  height: 3rem;
+}
+footer .follow i:hover,
+footer a:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer .copyright{
+  width: 100%;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .copyright a{
+  color: white;
+  font-size: 18px;
+}
+footer .copyright a:hover{
+  color: aqua;
 }
